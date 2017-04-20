@@ -1,17 +1,17 @@
-{% set version = "3.3.9" %}
+{% set version = "3.5.0" %}
+{% set sha256 = "beb91419245395bd69a4a6edad5ca3ec1a8b64e41457672dc687c173a495f034" %}
 
 package:
   name: maven
   version: {{ version }}
 
 source:
-  fn: maven-{{ version }}.tar.gz
+  fn: apache-maven-{{ version }}-bin.tar.gz
   url: http://apache.hippo.nl/maven/maven-3/{{ version }}/binaries/apache-maven-{{ version }}-bin.tar.gz
-  md5: 516923b3955b6035ba6b0a5b031fbd8b
+  md5: {{ sha256 }}
 
 build:
   number: 0
-  skip: true  # [win]
 
 requirements:
   run:
@@ -35,3 +35,4 @@ about:
 extra:
   recipe-maintainers:
     - johanneskoester
+    - hadim
