@@ -8,7 +8,7 @@ package:
 source:
   fn: apache-maven-{{ version }}-bin.tar.gz
   url: http://apache.hippo.nl/maven/maven-3/{{ version }}/binaries/apache-maven-{{ version }}-bin.tar.gz
-  md5: {{ sha256 }}
+  sha256: {{ sha256 }}
 
 build:
   number: 0
