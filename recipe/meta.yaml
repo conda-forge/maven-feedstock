@@ -11,6 +11,7 @@ source:
 
 build:
   number: 0
+  skip: true  # [win32]
 
 requirements:
   run:
@@ -28,7 +29,7 @@ about:
   summary: A software project management and comprehension tool.
   description: |
     Apache Maven is a software project management and comprehension tool.
-    Based on the concept of a project object model (POM), Maven can manage 
+    Based on the concept of a project object model (POM), Maven can manage
     a project's build, reporting and documentation from a central piece of information.
 
 extra:
