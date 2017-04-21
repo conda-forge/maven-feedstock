@@ -1,17 +1,17 @@
-{% set version = "3.3.9" %}
+{% set version = "3.5.0" %}
 
 package:
   name: maven
   version: {{ version }}
 
 source:
-  fn: maven-{{ version }}.tar.gz
+  fn: apache-maven-{{ version }}-bin.tar.gz
   url: http://apache.hippo.nl/maven/maven-3/{{ version }}/binaries/apache-maven-{{ version }}-bin.tar.gz
-  md5: 516923b3955b6035ba6b0a5b031fbd8b
+  sha256: beb91419245395bd69a4a6edad5ca3ec1a8b64e41457672dc687c173a495f034
 
 build:
   number: 0
-  skip: true  # [win]
+  skip: true  # [win32]
 
 requirements:
   run:
@@ -29,9 +29,10 @@ about:
   summary: A software project management and comprehension tool.
   description: |
     Apache Maven is a software project management and comprehension tool.
-    Based on the concept of a project object model (POM), Maven can manage 
+    Based on the concept of a project object model (POM), Maven can manage
     a project's build, reporting and documentation from a central piece of information.
 
 extra:
   recipe-maintainers:
     - johanneskoester
+    - hadim
