@@ -1,4 +1,4 @@
-{% set version = "3.5.0" %}
+{% set version = "3.5.4" %}
 
 package:
   name: maven
@@ -6,14 +6,23 @@ package:
 
 source:
   fn: apache-maven-{{ version }}-bin.tar.gz
-  url: http://apache.hippo.nl/maven/maven-3/{{ version }}/binaries/apache-maven-{{ version }}-bin.tar.gz
-  sha256: beb91419245395bd69a4a6edad5ca3ec1a8b64e41457672dc687c173a495f034
+  url: http://apache.hippo.nl/maven/maven-3/{{ version }}/source/apache-maven-{{ version }}-src.tar.gz
+  sha256: f3ba1f1b24bbd4c345174ac616d40e26e72dad6022d56317d3ff6f7dd003e2f5
 
 build:
   number: 0
   skip: true  # [win32]
+  missing_dso_whitelist:
+    # package includes libjansi DSO for various platforms, ignore them
+    - '**libutil.so.1'
+    - '**libutil.so.9'
+    - '**libc.so.6'
+    - '**libc.so.7'
+    - '**libSystem.B.dylib'
 
 requirements:
+  build:
+    - openjdk
   run:
     - openjdk
 
