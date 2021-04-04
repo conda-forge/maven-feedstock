@@ -22,8 +22,7 @@ test:
 
 about:
   home: https://maven.apache.org
-  license: Apachev2
-  license_family: Apache
+  license: Apache-2.0
   license_file: LICENSE
   summary: A software project management and comprehension tool.
   description: |
