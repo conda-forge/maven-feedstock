@@ -1,4 +1,4 @@
-{% set version = "3.8.1" %}
+{% set version = "3.8.5" %}
 
 package:
   name: maven
