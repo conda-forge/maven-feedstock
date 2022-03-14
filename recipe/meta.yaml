@@ -6,7 +6,7 @@ package:
 
 source:
   fn: apache-maven-{{ version }}-bin.tar.gz
-  url: https://dlcdn.apache.org/maven/maven-3/{{ version }}/binaries/apache-maven-{{ version }}-src.tar.gz
+  url: https://archive.apache.org/dist/maven/maven-3/{{ version }}/binaries/apache-maven-{{ version }}-bin.tar.gz
   sha256: b98a1905eb554d07427b2e5509ff09bd53e2f1dd7a0afa38384968b113abef02
 
 build:
