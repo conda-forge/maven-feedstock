@@ -7,7 +7,7 @@ package:
 source:
   fn: apache-maven-{{ version }}-bin.tar.gz
   url: https://archive.apache.org/dist/maven/maven-3/{{ version }}/binaries/apache-maven-{{ version }}-bin.tar.gz
-  sha256: b98a1905eb554d07427b2e5509ff09bd53e2f1dd7a0afa38384968b113abef02
+  sha256: 88e30700f32a3f60e0d28d0f12a3525d29b7c20c72d130153df5b5d6d890c673
 
 build:
   number: 0
@@ -34,3 +34,4 @@ extra:
   recipe-maintainers:
     - johanneskoester
     - hadim
+    - mariusvniekerk
