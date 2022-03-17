@@ -18,7 +18,8 @@ requirements:
 
 test:
   commands:
-    - mvn -v
+    # This test segfaults qemu on ppc64le
+    - mvn -v  # [not ppc64le]
 
 about:
   home: https://maven.apache.org
