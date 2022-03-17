@@ -178,4 +178,5 @@ Feedstock Maintainers
 * [@hadim](https://github.com/hadim/)
 * [@johanneskoester](https://github.com/johanneskoester/)
 * [@mariusvniekerk](https://github.com/mariusvniekerk/)
+* [@matthiasdiener](https://github.com/matthiasdiener/)
 
