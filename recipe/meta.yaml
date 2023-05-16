@@ -5,12 +5,17 @@ package:
   version: {{ version }}
 
 source:
-  fn: apache-maven-{{ version }}-bin.tar.gz
-  url: https://archive.apache.org/dist/maven/maven-3/{{ version }}/binaries/apache-maven-{{ version }}-bin.tar.gz
-  sha256: 809ef3220c6d179195c06c324cb9a6d34d8ecba566c5cfd8eb83167bc034117d
+  - fn: apache-maven-3.8.8-bin.tar.gz # Purposely download old stable binaries, to build the new version
+    url: https://dlcdn.apache.org/maven/maven-3/3.8.8/binaries/apache-maven-3.8.8-bin.tar.gz
+    sha256: 17811e108701af5985bf5167abbd47c06e92c6c6bd1c13a1a1c095c9b4ecc32a
+    sha512: 332088670d14fa9ff346e6858ca0acca304666596fec86eea89253bd496d3c90deae2be5091be199f48e09d46cec817c6419d5161fb4ee37871503f472765d00
+  - fn: apache-maven-{{ version }}-src.tar.gz
+    url: https://dlcdn.apache.org/maven/maven-3/{{ version }}/source/apache-maven-{{ version }}-src.tar.gz
+    sha256: a9f3ba1c9563a3cd5256fe6caf92f7e6a69a174fe8c803efe5137e843254801b
+    sha512: 977c0c56c570977567e63cd4d2e61d2645381e08713f0a8c73f22e6600cf31e1b5a360929fb08f28bb7329033eb5f9331b0dabdb32b2b9009650be5f48f6e6d1
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   run:
