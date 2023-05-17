@@ -213,4 +213,5 @@ Feedstock Maintainers
 * [@johanneskoester](https://github.com/johanneskoester/)
 * [@mariusvniekerk](https://github.com/mariusvniekerk/)
 * [@matthiasdiener](https://github.com/matthiasdiener/)
+* [@mkitti](https://github.com/mkitti/)
 
