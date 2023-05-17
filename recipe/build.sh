@@ -1,6 +1,6 @@
 #!/bin/bash
 
-conda create -yp $CONDA_PREFIX maven=3.9.2
+mamba create -yp $CONDA_PREFIX maven=3.9.1
 
 $CONDA_PREFIX/bin/mvn -Drat.skip=true install
 
