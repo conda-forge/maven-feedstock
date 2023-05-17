@@ -1,8 +1,8 @@
 #!/bin/bash
 
-mamba create -yp $CONDA_PREFIX maven=3.9.1
+mamba create -yp ./bootstrap maven=3.9.1
 
-$CONDA_PREFIX/bin/mvn -Drat.skip=true install
+./bootstrap/bin/mvn -Drat.ignoreErrors=true install
 
 target=$PREFIX/opt/maven
 mkdir -p $target
