@@ -1,3 +1,3 @@
-XCOPY "." "%LIBRARY_PREFIX%" /e
+mamba create -yp .\bootstrap maven=3.9.1
 
-rd /s /q "%LIBRARY_PREFIX%\lib\ext\"
+.\bootstrap\Library\bin\mvn -DdistributionTargetDir="%LIBRARY_PREFIX%" -Drat.ignoreErrors=true clean package
