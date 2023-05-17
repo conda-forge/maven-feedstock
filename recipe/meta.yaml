@@ -18,6 +18,8 @@ build:
   number: 1
 
 requirements:
+  build:
+    - openjdk
   run:
     - openjdk
 
