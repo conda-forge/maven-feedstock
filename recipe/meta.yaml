@@ -5,18 +5,17 @@ package:
   version: {{ version }}
 
 source:
-  - fn: apache-maven-{{ version }}-src.tar.gz
-    url: https://dlcdn.apache.org/maven/maven-3/{{ version }}/source/apache-maven-{{ version }}-src.tar.gz
-    sha256: d34f6a488c741c31a717301cd7b42d37aaa939cf981e950b707f4203e0bab956
+  url: https://dlcdn.apache.org/maven/maven-3/{{ version }}/source/apache-maven-{{ version }}-src.tar.gz
+  sha256: d34f6a488c741c31a717301cd7b42d37aaa939cf981e950b707f4203e0bab956
 
 build:
   number: 0
 
 requirements:
   build:
-    - openjdk <=17
+    - openjdk
   run:
-    - openjdk <=17
+    - openjdk
 
 test:
   commands:
