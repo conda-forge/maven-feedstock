@@ -14,9 +14,9 @@ build:
 
 requirements:
   build:
-    - openjdk
+    - openjdk <18.0.0a0
   run:
-    - openjdk
+    - openjdk <18.0.0a0
 
 test:
   commands:
