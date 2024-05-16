@@ -10,13 +10,13 @@ source:
     sha256: 817d8fbfc1f4d91712bfb1ff839a603f9873c4125e89151ae52b56f72ee8043e
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
-    - openjdk <=17
+    - openjdk <18.0.0a0
   run:
-    - openjdk <=17
+    - openjdk <18.0.0a0
 
 test:
   commands:
