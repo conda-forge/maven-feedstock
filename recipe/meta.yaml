@@ -1,4 +1,4 @@
-{% set version = "3.9.11" %}
+{% set version = "3.9.12" %}
 
 package:
   name: maven
@@ -7,7 +7,7 @@ package:
 source:
   - fn: apache-maven-{{ version }}-src.tar.gz
     url: https://dlcdn.apache.org/maven/maven-3/{{ version }}/source/apache-maven-{{ version }}-src.tar.gz
-    sha256: f312bb9db25937f1fd7ca1d53a086a3cdde596086147a42a75af027058810b9e
+    sha256: eb6333567ff68f46c510ffe2a18028f47d67003991a82a1bd1acd8500303fdf0
 
 build:
   number: 0
