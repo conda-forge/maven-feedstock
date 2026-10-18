@@ -81,8 +81,8 @@ set "_OLD_CONDA_SUBDIR=%CONDA_SUBDIR%"
 set "CONDA_SUBDIR=%BUILD_PLATFORM%"
 conda-build.exe "recipe" -m .ci_support\%CONFIG%.yaml --suppress-variables %EXTRA_CB_OPTIONS%
 if !errorlevel! neq 0 exit /b !errorlevel!
-set "CONDA_SUBDIR=%_OLD_CONDA_SUBDIR%"
 set "_OLD_CONDA_SUBDIR="
+set "CONDA_SUBDIR=%_OLD_CONDA_SUBDIR%"
 
 call :start_group "Inspecting artifacts"
 :: inspect_artifacts was only added in conda-forge-ci-setup 4.9.4
